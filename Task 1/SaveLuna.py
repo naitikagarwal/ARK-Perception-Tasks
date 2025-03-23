@@ -9,7 +9,7 @@ def main():
     if img_left is None or img_right is None:
         raise IOError("Error loading one or both images. Please check the file paths.")
 
-    # Step 2: Convert the images to grayscale
+    # converting to grayscale
     gray_left = cv2.cvtColor(img_left, cv2.COLOR_BGR2GRAY)
     gray_right = cv2.cvtColor(img_right, cv2.COLOR_BGR2GRAY)
 
